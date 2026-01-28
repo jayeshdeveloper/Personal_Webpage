@@ -1,16 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 20px;
+    padding-top: 70px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+.hero-section {
+    height: 90vh;
+    background: linear-gradient(120deg, #1e3c72, #2a5298);
+    display: flex;
+    align-items: center;
 }
 
-h1, h2 {
-    color: #2c3e50;
+.page-bg {
+    background-color: #f8f9fa;
+}
+
+.animate-fade {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
